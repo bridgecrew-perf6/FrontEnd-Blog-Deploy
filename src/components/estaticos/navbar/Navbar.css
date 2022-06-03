@@ -3,6 +3,10 @@
     color: white;
 }
 
+.menu{
+    background-color: #e9967a!important;
+}
+
 .text-decorator-none{
     text-decoration: none;
 }
