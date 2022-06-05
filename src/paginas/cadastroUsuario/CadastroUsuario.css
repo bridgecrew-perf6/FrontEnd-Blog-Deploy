@@ -1,5 +1,5 @@
 .imagem2{
-    background-image: url(https://www.canva.com/design/DAFCZkhyBkQ/view);
+    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -11,16 +11,6 @@
     font-weight: bold !important;
 }
 
-.button{
+.btnCancelar{
     margin-right: 20px !important;
-    border-color: white !important;
-    background-color: #EEBCB0 !important;
-    color: white !important;
-}
-
-.button1{
-    margin-right: 20px !important;
-    border-color: white !important;
-    background-color: #F3A65A !important;
-    color: white !important;
 }

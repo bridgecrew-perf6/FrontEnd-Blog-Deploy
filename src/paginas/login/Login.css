@@ -1,14 +1,9 @@
 .textos1{
     font-weight: bold !important;
-    color: gray !important;
- }
-
- .textos2{
-     color: gray !important;
  }
  
  .imagem{
-     background-image: url(https://www.canva.com/design/DAFCZkhyBkQ/view);
+     background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
      background-repeat: no-repeat;
      width: 100vh;
      min-height: 100vh;
@@ -19,10 +14,3 @@
  .text-decorator-none{
      text-decoration: none;
  }
-
- .botao{
-    border-color: white !important;
-    background-color: #F3A65A !important;
-    color: white !important;
-}
- 
