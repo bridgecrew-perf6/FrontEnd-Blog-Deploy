@@ -44,7 +44,7 @@ function CadastroTema() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/tema/${id}`, setTema, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
               'Authorization': token
             }
@@ -66,7 +66,7 @@ function CadastroTema() {
     
             if (id !== undefined) {
                 console.log(tema)
-                put(`/tema`, tema, setTema, {
+                put(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
@@ -82,7 +82,7 @@ function CadastroTema() {
                     progress: undefined,
                     });
             } else {
-                post(`/tema`, tema, setTema, {
+                post(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
@@ -109,9 +109,9 @@ function CadastroTema() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de Cadastro Tema</Typography>
+                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
+                <Button type="submit" variant="contained" color="primary" className='botao'>
                     Finalizar
                 </Button>
             </form>
