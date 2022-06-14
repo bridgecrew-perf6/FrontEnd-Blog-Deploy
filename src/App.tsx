@@ -1,23 +1,24 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/estaticos/navbar/Navbar';
-import Footer from './components/estaticos/footer/Footer';
+import {ToastContainer} from 'react-toastify';
+
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
-import './App.css';
-import ListaTema from './components/temas/listaTema/ListaTema';
+
+import Navbar from './components/estaticos/navbar/Navbar';
+import Footer from './components/estaticos/footer/Footer';
 import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema'
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
-import { Provider } from 'react-redux';
+import ListaTema from './components/temas/listaTema/ListaTema';
+
 import store from './store/store';
-import {ToastContainer} from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
-
-
 
 function App() {
   return (
