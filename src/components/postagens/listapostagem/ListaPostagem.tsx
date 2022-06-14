@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import Postagem from '../../../models/Postagem';
-import { busca } from '../../../services/Service'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import './ListaPostagem.css';
+import { Link } from 'react-router-dom'
+import { busca } from '../../../services/Service'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
-import { toast } from 'react-toastify';
+import { toast } from 'react-toastify'; 
+
+import Postagem from '../../../models/Postagem';
+import './ListaPostagem.css';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])

@@ -8,17 +8,17 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 
 import Navbar from './components/estaticos/navbar/Navbar';
-import Footer from './components/estaticos/footer/Footer';
+import ListaTema from './components/temas/listaTema/ListaTema';
 import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
-import CadastroTema from './components/temas/cadastroTema/CadastroTema'
+import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
-import ListaTema from './components/temas/listaTema/ListaTema';
-
-import store from './store/store';
+import Footer from './components/estaticos/footer/Footer';
 
 import 'react-toastify/dist/ReactToastify.css';
+
+import store from './store/store';
 
 function App() {
   return (
