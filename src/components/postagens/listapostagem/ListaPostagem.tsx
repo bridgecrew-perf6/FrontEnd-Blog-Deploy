@@ -49,7 +49,7 @@ function ListaPostagem() {
   }, [posts.length])
 
   return (
-    <>
+    <Box display="flex" className="novaClasse">
       {
         posts.map(post => (
           <Box m={2} >
@@ -72,15 +72,15 @@ function ListaPostagem() {
                 <Box display="flex" justifyContent="center" mb={1.5}>
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                    <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary">
-                        atualizar
+                    <Box mx={1} className="marginLeft">
+                      <Button variant="contained" className="btnAtualizar" size='small' color="primary">
+                        Atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary" className="botao">
+                      <Button variant="contained" size='small' color="secondary" className="btnDeletar">
                         deletar
                       </Button>
                     </Box>
@@ -91,7 +91,7 @@ function ListaPostagem() {
           </Box>
         ))
       }
-    </>
+    </Box>
   )
 }
 
